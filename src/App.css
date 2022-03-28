@@ -1,38 +1,144 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+header {
+  padding: 10px;
+  
+}
+main {
+  
+}
+footer {
+  
+  height: auto;
+}
+.place-center {
+  display: grid;
+  place-items: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+ul,
+ol,
+label {
+  font-family: Poppins, sans-serif;
+}
+.h-200 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid #000;
 }
 
-.App-link {
-  color: #61dafb;
+.line-bg {
+  width: 100%;
+  height: 5px;
+  background: #C4C4C4;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.square {
+  /*width: auto;*/
+  /*height: auto;*/
+  border: 1px solid tomato;
+  padding: 10px 0;
+}
+
+li {
+  /*background: #C4C4C4;*/
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+}
+.grid-custom {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  place-items: center;
+  gap: 10px;
+}
+.inputNumber {
+  width: 100%;
+  font-size: 20px;
+  border: 1px solid #2C3E50;
+  color: #2C3E50;
+}
+.btn-custom {
+  width: 100%;
+  color: #fff;
+  padding: 10px 20px;
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  border: none;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  padding: 10px;
+  background: whitesmoke;
+}
+
+.border-full {
+  border: 1px dashed #ccc;
+}
+.border-b {
+  border-bottom: 1px dashed #ccc;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 10px;
+  place-items: center;
+
+}
+.grid img {
+  width: 20px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+.grid-custom {
+  
+  display: grid;
+  grid-template-columns: 25% 1fr 20%;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+.flex {
+  display: inline-flex;
+}
+.columns12 {
+ display: grid;
+ grid-template-columns: repeat(12, 1fr);
+}
+.results-squares {
+  display: grid;
+  place-items: center;
+  color: whitesmoke;
+  gap: 3px;
+  border: 1px solid #fff;
+  padding: 5px;
+}
+/* <ul className="list-inline">
+                          {listItems.reverse()}
+                      </ul> */
+
+.selection {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  gap: 10px;
+}
+select {
+  width: 100%;
+  font-family: Poppins, sans-serif;
+  padding: 5px;
 }
